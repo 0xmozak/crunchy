@@ -32,6 +32,7 @@
 //! * `limit_2048`
 
 #![cfg_attr(not(feature = "std"), no_std)]
+#![cfg_attr(feature = "std", feature(restricted_std))]
 
 #[cfg(target_os = "windows")]
 include!(concat!(env!("OUT_DIR"), "\\lib.rs"));
